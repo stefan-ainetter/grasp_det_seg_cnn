@@ -6,15 +6,17 @@
 <a href="https://arxiv.org/abs/2107.05287">arXiv</a>
 </p>
 
-This repository contains the code for the ICRA21 paper "End-to-end Trainable Deep Neural Network for Robotic Grasp Detection and Semantic Segmentation from RGB". 
-It contains code for training and evaluation of our method in PyTorch, as well as a link to the OCID_grasp dataset. 
+This repository contains the code for the ICRA21 paper "End-to-end Trainable Deep Neural Network for Robotic Grasp Detection
+and Semantic Segmentation from RGB". 
+It contains code for training and evaluation of our method in PyTorch, as well as the OCID_grasp dataset. 
 
 If you use our method or dataset  in your research, please cite:
 ```bibtex
 @InProceedings{ainetter2021end,
   title={End-to-end Trainable Deep Neural Network for Robotic Grasp Detection and Semantic Segmentation from RGB},
   author={Ainetter, Stefan and Fraundorfer, Friedrich},
-  journal={IEEE International Conference on Robotics and Automation (ICRA)},
+  booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={13452--13458}
   year={2021}
 }
 ```
@@ -45,8 +47,8 @@ algorithms and utilities, and a set of scripts to train / test the networks.
 
 The library, called `grasp_det_seg`, can be installed with:
 ```bash
-git clone https://github.com/mapillary/seamseg.git
-cd seamseg
+git clone https://github.com/stefan-ainetter/grasp_det_seg_cnn.git
+cd grasp_det_seg_cnn
 python setup.py install
 ```
 
@@ -58,11 +60,11 @@ decide to load the local copy of the `grasp_det_seg` package instead of the one 
 
 The model files provided are made available under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
-A trained model for the OCID_grasp dataset can be downloaded [here](https://drive.google.com/file/d/1ULhd_CZ24L8FnI9lZ2H6Xuf03n6NA_-Y/view). 
+A trained model for the OCID_grasp dataset can be downloaded [here](https://files.icg.tugraz.at/d/6b896fc59c4a48f98fe0/). 
 Download and copy the downloaded weights into the `ckpt_files_OCID/pretrained` folder.
 
 For re-training the network on OCID_grasp, you need to download weights pretrained on ImageNet 
-[here](https://drive.google.com/file/d/1ULhd_CZ24L8FnI9lZ2H6Xuf03n6NA_-Y/view) and copy them 
+[here](https://files.icg.tugraz.at/d/369dbea9ab834be1936b/) and copy them 
 into the `weights_pretrained` folder.
 
 ### Training
@@ -72,7 +74,7 @@ script.
 
 To prepare the dataset:
 Download the OCID_grasp dataset [here](https://github.com/mapillary/seamseg/wiki/Seamless-Scene-Segmentation-dataset-format).
-Unpack the downloaded `.zip` file, and copy the data into `DATA/OCID_grasp`.
+Unpack the downloaded `OCID_grasp.zip` file into the `DATA` folder.
 The configuration file is a simple text file in `ini` format.
 The default value of each configuration parameter, as well as a short description of what it does, is available in
 [grasp_det_seg/config/defaults](grasp_det_seg/config/defaults).
@@ -96,7 +98,7 @@ utility.
 ### Running inference
 
 Given a trained network, inference can be run on any set of images using
-[scripts/test_panoptic.py](scripts/test_panoptic.py):
+[scripts/test_det_seg_OCID.py](scripts/test_det_seg_OCID.py):
 ```bash
 cd scripts
 python3 -m torch.distributed.launch --nproc_per_node=1 test_det_seg_OCID.py 
@@ -106,11 +108,11 @@ python3 -m torch.distributed.launch --nproc_per_node=1 test_det_seg_OCID.py
 Predictions will be written to `OUTPUT_DIR` e.g. the `output` folder. `MODEL_PARAMS` are pre-trained weights e.g. `ckpt_files_OCID/pretrained/model_last.pth.tar`, 
 `DATA_DIR` points to the used dateset splits e.g. `DATA/OCID_grasp/data_split`.
 
-Note that our code is based on the CNN-based architecture for panopitc segmentation proposed [here](https://github.com/mapillary/seamseg).
+Note that our code is based on the CNN-based architecture for panopitc segmentation, see [here](https://github.com/mapillary/seamseg).
 
-### OCID_grasp
-OCID_grasp is a dataset extension for the [OICD dataset](https://www.acin.tuwien.ac.at/en/vision-for-robotics/software-tools/object-clutter-indoor-dataset/)
-for grasp detection and segmentation in cluttered scenes. If you decide to use OCID_grasp for your research, please  also cite the OCID paper:
+## OCID_grasp dataset
+OCID_grasp is a dataset extension for grasp detection and segmentation in cluttered scenes based on for the [OICD dataset](https://www.acin.tuwien.ac.at/en/vision-for-robotics/software-tools/object-clutter-indoor-dataset/).
+If you decide to use OCID_grasp for your research, please  also cite the OCID paper:
 ```bibtex
 @inproceedings{suchi2019easylabel,
   title={EasyLabel: a semi-automatic pixel-wise object annotation tool for creating robotic RGB-D datasets},
