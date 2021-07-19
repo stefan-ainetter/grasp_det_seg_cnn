@@ -1,7 +1,7 @@
 # End-to-end Trainable Deep Neural Network for Robotic Grasp Detection and Semantic Segmentation from RGB
 
 <p align="center">
-<img src="sample.png width="100%"/>
+<img src="sample.png" width="100%"/>
 <br>
 <a href="https://arxiv.org/abs/2107.05287">arXiv</a>
 </p>
