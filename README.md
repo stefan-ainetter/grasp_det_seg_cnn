@@ -73,7 +73,7 @@ Training involves three main steps: Preparing the dataset, creating a configurat
 script.
 
 To prepare the dataset:
-Download the OCID_grasp dataset [here](https://github.com/mapillary/seamseg/wiki/Seamless-Scene-Segmentation-dataset-format).
+Download the OCID_grasp dataset [here](https://files.icg.tugraz.at/f/c1c840447a8241be832b/?dl=1).
 Unpack the downloaded `OCID_grasp.zip` file into the `DATA` folder.
 The configuration file is a simple text file in `ini` format.
 The default value of each configuration parameter, as well as a short description of what it does, is available in
