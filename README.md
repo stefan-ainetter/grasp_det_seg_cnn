@@ -108,9 +108,8 @@ python3 -m torch.distributed.launch --nproc_per_node=1 test_det_seg_OCID.py
 Predictions will be written to `OUTPUT_DIR` e.g. the `output` folder. `MODEL_PARAMS` are pre-trained weights e.g. `ckpt_files_OCID/pretrained/model_last.pth.tar`, 
 `DATA_DIR` points to the used dateset splits e.g. `DATA/OCID_grasp/data_split`.
 
-Note that our code is based on the CNN-based architecture for panopitc segmentation, see [here](https://github.com/mapillary/seamseg).
 
-## OCID_grasp dataset
+## Related Citations
 OCID_grasp is a dataset extension for grasp detection and segmentation in cluttered scenes based on for the [OICD dataset](https://www.acin.tuwien.ac.at/en/vision-for-robotics/software-tools/object-clutter-indoor-dataset/).
 If you decide to use OCID_grasp for your research, please  also cite the OCID paper:
 ```bibtex
@@ -121,5 +120,16 @@ If you decide to use OCID_grasp for your research, please  also cite the OCID pa
   pages={6678--6684},
   year={2019},
   organization={IEEE}
+}
+```
+Our framework is based on the architecture from [Seamless Scene Segmentation](https://github.com/mapillary/seamseg).
+If it is also helpful to you, please cite
+```bibtex
+@InProceedings{Porzi_2019_CVPR,
+  author = {Porzi, Lorenzo and Rota Bul\`o, Samuel and Colovic, Aleksander and Kontschieder, Peter},
+  title = {Seamless Scene Segmentation},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month = {June},
+  year = {2019}
 }
 ```
