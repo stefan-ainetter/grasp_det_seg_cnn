@@ -63,8 +63,11 @@ def Rotate2D(pts, cnt, ang):
 
 
 def save_prediction_image(raw_pred, img_abs_path, img_root_path, im_size, out_dir):
+
     num_classes_theta = 18
-    threshold = 0.05
+    # grasp candidate confidence threshold
+    threshold = 0.06
+
     iou_seg_threshold = 100  # in px
 
     for i, (sem_pred, bbx_pred, cls_pred, obj_pred) in enumerate(zip(
