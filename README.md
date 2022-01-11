@@ -104,8 +104,8 @@ Predictions will be written to `OUTPUT_DIR` e.g. the `output` folder. `MODEL_PAR
 
 
 ## Related Citations
-OCID_grasp is a dataset extension for grasp detection and segmentation in cluttered scenes based on for the [OICD dataset](https://www.acin.tuwien.ac.at/en/vision-for-robotics/software-tools/object-clutter-indoor-dataset/).
-If you decide to use OCID_grasp for your research, please cite the OCID paper:
+OCID_grasp is a dataset extension of the [OICD dataset](https://www.acin.tuwien.ac.at/en/vision-for-robotics/software-tools/object-clutter-indoor-dataset/).
+If you decide to use OCID_grasp for your research, please also cite the OCID paper:
 ```bibtex
 @inproceedings{suchi2019easylabel,
   title={EasyLabel: a semi-automatic pixel-wise object annotation tool for creating robotic RGB-D datasets},
