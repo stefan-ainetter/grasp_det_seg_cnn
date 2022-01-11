@@ -116,8 +116,7 @@ If you decide to use OCID_grasp for your research, please also cite the OCID pap
   organization={IEEE}
 }
 ```
-Our framework is based on the architecture from [Seamless Scene Segmentation](https://github.com/mapillary/seamseg).
-If it is also helpful to you, please cite
+Our framework is based on the architecture from [Seamless Scene Segmentation](https://github.com/mapillary/seamseg):
 ```bibtex
 @InProceedings{Porzi_2019_CVPR,
   author = {Porzi, Lorenzo and Rota Bul\`o, Samuel and Colovic, Aleksander and Kontschieder, Peter},
