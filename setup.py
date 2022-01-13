@@ -35,7 +35,7 @@ setuptools.setup(
     name="GraspDetSeg_CNN",
     author="Stefan Ainetter",
     author_email="stefan.ainetter@icg.tugraz.at",
-    description="Grasp Detection and Segmentation for Pytorch",
+    description="Grasp Detection and Segmentation for Pytorch, code based on Seamless Scene Segmentation (https://github.com/mapillary/seamseg).",
     long_description_content_type="text/markdown",
     url="",
     classifiers=[
