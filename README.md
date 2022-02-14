@@ -105,7 +105,10 @@ python3 -m torch.distributed.launch --nproc_per_node=1 test_det_seg_OCID.py
 Predictions will be written to `OUTPUT_DIR` e.g. the `output` folder. `MODEL_PARAMS` are pre-trained weights e.g. `ckpt_files_OCID/pretrained/model_last.pth.tar`, 
 `DATA_DIR` points to the used dateset splits e.g. `DATA/OCID_grasp/data_split`.
 
-
+## OCID_grasp dataset
+The OCID_grasp dataset can be downloaded [here](https://files.icg.tugraz.at/d/777515d0f6e74ed183c2/).
+OCID_grasp consists of 1763 selected RGB-D images of the OCID dataset, with over 11.4k segmented object masks and more than 75k hand-annotated 
+grasp candidates. Additionally, each object is classified into one of 31 object classes.
 ## Related Works
 OCID_grasp is a dataset extension of the [OCID dataset](https://www.acin.tuwien.ac.at/en/vision-for-robotics/software-tools/object-clutter-indoor-dataset/).
 If you decide to use OCID_grasp for your research, please also cite the OCID paper:
