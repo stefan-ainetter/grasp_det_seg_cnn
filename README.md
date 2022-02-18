@@ -70,15 +70,15 @@ Training involves three main steps: Preparing the dataset, creating a configurat
 script.
 
 To prepare the dataset:
-Download the OCID_grasp dataset [here](https://files.icg.tugraz.at/d/777515d0f6e74ed183c2/).
+1) Download the OCID_grasp dataset [here](https://files.icg.tugraz.at/d/777515d0f6e74ed183c2/).
 Unpack the downloaded `OCID_grasp.zip` file into the `DATA` folder.
-The configuration file is a simple text file in `ini` format.
+2) The configuration file is a simple text file in `ini` format.
 The default value of each configuration parameter, as well as a short description of what it does, is available in
 [grasp_det_seg/config/defaults](grasp_det_seg/config/defaults).
 **Note** that these are just an indication of what a "reasonable" value for each parameter could be, and are not
 meant as a way to reproduce any of the results from our paper.
 
-To launch the training:
+3) To launch the training:
 ```bash
 cd scripts
 python3 -m torch.distributed.launch --nproc_per_node=1 train_det_seg_OCID.py 
@@ -132,3 +132,9 @@ Our framework is based on the architecture from [Seamless Scene Segmentation](ht
   year = {2019}
 }
 ```
+---
+## About our latest Research
+### Our paper 'Depth-aware Object Segmentation and Grasp Detection for Robotic Picking Tasks' got accepted at BMVC21
+In our latest work, we implemented a method for joint grasp detection and class-agnostic object instance segmentation,
+which was published at BMVC21. 
+More information can be found [here](https://files.icg.tugraz.at/f/7bdf05241b64417989ff/).
