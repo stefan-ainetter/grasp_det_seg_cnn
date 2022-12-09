@@ -57,11 +57,11 @@ python setup.py install
 
 The model files provided are made available under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
-A trained model for the OCID_grasp dataset can be downloaded [here](https://files.icg.tugraz.at/d/6b896fc59c4a48f98fe0/). 
+A trained model for the OCID_grasp dataset can be downloaded [here](https://files.icg.tugraz.at/d/10296a970cc242aa90ff/). 
 Download and copy the downloaded weights into the `ckpt_files_OCID/pretrained` folder.
 
 For re-training the network on OCID_grasp, you need to download weights pretrained on ImageNet 
-[here](https://files.icg.tugraz.at/d/369dbea9ab834be1936b/) and copy them 
+[here](https://files.icg.tugraz.at/d/1e84f72c1109485ba9f9/) and copy them 
 into the `weights_pretrained` folder.
 
 ### Training
