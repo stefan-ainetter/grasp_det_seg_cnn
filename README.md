@@ -137,4 +137,4 @@ Our framework is based on the architecture from [Seamless Scene Segmentation](ht
 ### Our paper 'Depth-aware Object Segmentation and Grasp Detection for Robotic Picking Tasks' got accepted at BMVC21
 In our latest work, we implemented a method for joint grasp detection and class-agnostic object instance segmentation,
 which was published at BMVC21. 
-More information can be found [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6?path=%2FGrasp_det_seg_cnn%2FBMVC_depth_aware_grasping&openfile=1141518904).
+More information can be found [here](https://arxiv.org/pdf/2111.11114).
