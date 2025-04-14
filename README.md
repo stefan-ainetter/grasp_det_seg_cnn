@@ -57,11 +57,11 @@ python setup.py install
 
 The model files provided are made available under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
-A trained model for the OCID_grasp dataset can be downloaded [here](https://files.icg.tugraz.at/d/10296a970cc242aa90ff/). 
+A trained model for the OCID_grasp dataset can be downloaded [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6/download?path=%2FGrasp_det_seg_cnn%2FOCID_pretrained&files=model_last.pth.tar). 
 Download and copy the downloaded weights into the `ckpt_files_OCID/pretrained` folder.
 
 For re-training the network on OCID_grasp, you need to download weights pretrained on ImageNet 
-[here](https://files.icg.tugraz.at/d/1e84f72c1109485ba9f9/) and copy them 
+[here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6?path=%2FGrasp_det_seg_cnn%2FImageNet_weights) and copy them 
 into the `weights_pretrained` folder.
 
 ### Training
@@ -70,7 +70,7 @@ Training involves three main steps: Preparing the dataset, creating a configurat
 script.
 
 To prepare the dataset:
-1) Download the OCID_grasp dataset [here](https://files.icg.tugraz.at/d/777515d0f6e74ed183c2/).
+1) Download the OCID_grasp dataset [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6/download?path=%2FGrasp_det_seg_cnn%2FOCID_grasp&files=OCID_grasp.zip).
 Unpack the downloaded `OCID_grasp.zip` file into the `DATA` folder.
 2) The configuration file is a simple text file in `ini` format.
 The default value of each configuration parameter, as well as a short description of what it does, is available in
@@ -106,7 +106,7 @@ Predictions will be written to `OUTPUT_DIR` e.g. the `output` folder. `MODEL_PAR
 `DATA_DIR` points to the used dateset splits e.g. `DATA/OCID_grasp/data_split`.
 
 ## OCID_grasp dataset
-The OCID_grasp dataset can be downloaded [here](https://files.icg.tugraz.at/d/777515d0f6e74ed183c2/).
+The OCID_grasp dataset can be downloaded [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6/download?path=%2FGrasp_det_seg_cnn%2FOCID_grasp&files=OCID_grasp.zip).
 OCID_grasp consists of 1763 selected RGB-D images of the OCID dataset, with over 11.4k segmented object masks and more than 75k hand-annotated 
 grasp candidates. Additionally, each object is classified into one of 31 object classes.
 ## Related Work
@@ -137,4 +137,4 @@ Our framework is based on the architecture from [Seamless Scene Segmentation](ht
 ### Our paper 'Depth-aware Object Segmentation and Grasp Detection for Robotic Picking Tasks' got accepted at BMVC21
 In our latest work, we implemented a method for joint grasp detection and class-agnostic object instance segmentation,
 which was published at BMVC21. 
-More information can be found [here](https://files.icg.tugraz.at/f/7bdf05241b64417989ff/).
+More information can be found [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6?path=%2FGrasp_det_seg_cnn%2FBMVC_depth_aware_grasping&openfile=1141518904).
