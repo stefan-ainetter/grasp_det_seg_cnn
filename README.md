@@ -1,8 +1,5 @@
 # End-to-end Trainable Deep Neural Network for Robotic Grasp Detection and Semantic Segmentation from RGB
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/end-to-end-trainable-deep-neural-network-for/robotic-grasping-on-cornell-grasp-dataset-1)](https://paperswithcode.com/sota/robotic-grasping-on-cornell-grasp-dataset-1?p=end-to-end-trainable-deep-neural-network-for)
-
-
 <p align="center">
 <img src="Network.png" width="100%"/>
 <br>
